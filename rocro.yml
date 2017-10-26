@@ -1,0 +1,22 @@
+inspecode:
+  experimental:
+    #input:
+    #ignore:
+
+  #### Tools for Go [96.3%]
+  cpd:         default
+  errcheck:    default
+  gas:         default
+  gofmt:       default
+  goimports:   default
+  golint:      default
+  gosimple:    default
+  go-test:     default
+  go-vet:      default
+  ineffassign: default
+  interfacer:  default
+  unused:      default
+
+  #### Tools for all-languages
+  grep:        default
+  misspell:    default

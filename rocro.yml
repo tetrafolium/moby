@@ -5,18 +5,18 @@ inspecode:
     - vendor/
 
   #### Tools for Go [96.3%]
-  cpd:         default
-  errcheck:    default
+  #cpd:         default
+  #errcheck:    default
   gas:         default
   gofmt:       default
-  goimports:   default
+  #goimports:   default
   golint:      default
-  gosimple:    default
-  go-test:     default
+  #gosimple:    default
+  #go-test:     default
   go-vet:      default
   ineffassign: default
-  interfacer:  default
-  unused:      default
+  #interfacer:  default
+  #unused:      default
 
   #### Tools for all-languages
   grep:        default

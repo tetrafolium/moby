@@ -1,7 +1,8 @@
 inspecode:
   experimental:
     #input:
-    #ignore:
+    ignore:
+    - vendor/
 
   #### Tools for Go [96.3%]
   cpd:         default

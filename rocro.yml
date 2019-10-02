@@ -1,4 +1,2 @@
 inspecode:
-  fossology:
-    machine:
-      cpu: 1
+  fossology: default

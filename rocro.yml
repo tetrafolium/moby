@@ -60,4 +60,5 @@ inspecode:
       thresholds: {num-issues: 999}
 
     unused:
+      timeout: 3h
       thresholds: {num-issues: 999}

@@ -621,7 +621,7 @@ func (daemon *Daemon) setDefaultIsolation() error {
 				daemon.defaultIsolation = containertypes.Isolation("process")
 			}
 		default:
-			return fmt.Errorf("Unrecognised exec-opt '%s'\n", key)
+			return fmt.Errorf("Unrecognised exec-opt '%s'", key)
 		}
 	}
 

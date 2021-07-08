@@ -3,7 +3,7 @@
 // DO NOT EDIT!
 
 /*
-	Package runtime is a generated protocol buffer package.
+Package runtime is a generated protocol buffer package.
 
 	It is generated from these files:
 		plugin.proto
@@ -653,7 +653,7 @@ func skipPlugin(dAtA []byte) (n int, err error) {
 		case 3:
 			for {
 				var innerWire uint64
-				var start int = iNdEx
+				var start = iNdEx
 				for shift := uint(0); ; shift += 7 {
 					if shift >= 64 {
 						return 0, ErrIntOverflowPlugin

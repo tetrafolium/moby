@@ -36,7 +36,7 @@ func TestValidateMount(t *testing.T) {
 		cases = append(cases, struct {
 			input    mount.Mount
 			expected error
-		}{mount.Mount{Type: mount.TypeBind, Source: testSourcePath, Target: testDestinationPath}, errBindNotExist}) // bind source existance is not checked on linux
+		}{mount.Mount{Type: mount.TypeBind, Source: testSourcePath, Target: testDestinationPath}, errBindNotExist}) // bind source existence is not checked on linux
 	}
 	lcowCases := []struct {
 		input    mount.Mount

@@ -1030,7 +1030,7 @@ func (s *DockerSuite) TestContainerAPIWait(c *check.C) {
 	select {
 	case err = <-errC:
 		c.Assert(err, checker.IsNil)
-	case waitres := <-waitresC:
+	case waiters := <-waitresC:
 		c.Assert(waitres.StatusCode, checker.Equals, int64(0))
 	}
 }

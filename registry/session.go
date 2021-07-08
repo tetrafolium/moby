@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"sync"
+
 	// this is required for some certificates
 	_ "crypto/sha512"
 	"encoding/hex"

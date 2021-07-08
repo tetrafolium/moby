@@ -7,7 +7,7 @@ import (
 	"github.com/docker/distribution/reference"
 	"github.com/docker/docker/pkg/plugingetter"
 	"github.com/docker/docker/pkg/plugins"
-	"github.com/docker/docker/plugin/v2"
+	v2 "github.com/docker/docker/plugin/v2"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

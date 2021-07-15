@@ -10,7 +10,7 @@ import (
 	enginetypes "github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/swarm/runtime"
 	"github.com/docker/docker/plugin"
-	"github.com/docker/docker/plugin/v2"
+	v2 "github.com/docker/docker/plugin/v2"
 	"github.com/docker/swarmkit/api"
 	"github.com/gogo/protobuf/proto"
 	"github.com/pkg/errors"

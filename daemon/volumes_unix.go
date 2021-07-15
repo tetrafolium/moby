@@ -17,7 +17,7 @@ import (
 	"github.com/docker/docker/pkg/fileutils"
 	"github.com/docker/docker/pkg/mount"
 	"github.com/docker/docker/volume"
-	"github.com/docker/docker/volume/drivers"
+	volumedrivers "github.com/docker/docker/volume/drivers"
 	"github.com/docker/docker/volume/local"
 	"github.com/pkg/errors"
 )

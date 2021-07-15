@@ -161,7 +161,7 @@ func verifyPlatformContainerSettings(daemon *Daemon, hostConfig *containertypes.
 		hostConfig.MemorySwap = -1
 	}
 	if hostConfig.Memory > 0 && hostConfig.MemorySwap > 0 && hostConfig.MemorySwap < hostConfig.Memory {
-		return warnings, fmt.Errorf("Minimum memoryswap limit should be larger than memory limit, see usage.")
+		return warnings, fmt.Errorf("Minimum memoryswap limit should be larger than memory limit, see usage")
 	}
 	// Solaris NOTE: We allow and encourage setting the swap without setting the memory limit.
 
@@ -176,7 +176,7 @@ func verifyPlatformContainerSettings(daemon *Daemon, hostConfig *containertypes.
 		hostConfig.MemoryReservation = 0
 	}
 	if hostConfig.Memory > 0 && hostConfig.MemoryReservation > 0 && hostConfig.Memory < hostConfig.MemoryReservation {
-		return warnings, fmt.Errorf("Minimum memory limit should be larger than memory reservation limit, see usage.")
+		return warnings, fmt.Errorf("Minimum memory limit should be larger than memory reservation limit, see usage")
 	}
 	if hostConfig.KernelMemory > 0 && !sysInfo.KernelMemory {
 		warnings = append(warnings, "Your kernel does not support kernel memory limit capabilities. Limitation discarded.")
@@ -227,17 +227,17 @@ func verifyPlatformContainerSettings(daemon *Daemon, hostConfig *containertypes.
 	}
 	cpusAvailable, err := sysInfo.IsCpusetCpusAvailable(hostConfig.CpusetCpus)
 	if err != nil {
-		return warnings, fmt.Errorf("Invalid value %s for cpuset cpus.", hostConfig.CpusetCpus)
+		return warnings, fmt.Errorf("Invalid value %s for cpuset cpus", hostConfig.CpusetCpus)
 	}
 	if !cpusAvailable {
-		return warnings, fmt.Errorf("Requested CPUs are not available - requested %s, available: %s.", hostConfig.CpusetCpus, sysInfo.Cpus)
+		return warnings, fmt.Errorf("Requested CPUs are not available - requested %s, available: %s", hostConfig.CpusetCpus, sysInfo.Cpus)
 	}
 	memsAvailable, err := sysInfo.IsCpusetMemsAvailable(hostConfig.CpusetMems)
 	if err != nil {
-		return warnings, fmt.Errorf("Invalid value %s for cpuset mems.", hostConfig.CpusetMems)
+		return warnings, fmt.Errorf("Invalid value %s for cpuset mems", hostConfig.CpusetMems)
 	}
 	if !memsAvailable {
-		return warnings, fmt.Errorf("Requested memory nodes are not available - requested %s, available: %s.", hostConfig.CpusetMems, sysInfo.Mems)
+		return warnings, fmt.Errorf("Requested memory nodes are not available - requested %s, available: %s", hostConfig.CpusetMems, sysInfo.Mems)
 	}
 	if hostConfig.BlkioWeight > 0 && !sysInfo.BlkioWeight {
 		warnings = append(warnings, "Your kernel does not support Block I/O weight. Weight discarded.")

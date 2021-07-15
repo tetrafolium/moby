@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/docker/docker/pkg/plugins"
-	"github.com/docker/docker/plugin/v2"
+	v2 "github.com/docker/docker/plugin/v2"
 )
 
 // Store manages the plugin inventory in memory and on-disk

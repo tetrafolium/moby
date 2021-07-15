@@ -30,7 +30,7 @@ import (
 	"github.com/docker/docker/pkg/pools"
 	"github.com/docker/docker/pkg/progress"
 	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/plugin/v2"
+	v2 "github.com/docker/docker/plugin/v2"
 	refstore "github.com/docker/docker/reference"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"

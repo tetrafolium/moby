@@ -13,15 +13,21 @@ It has these top-level messages:
 */
 package remotecontext
 
-import proto "github.com/gogo/protobuf/proto"
-import fmt "fmt"
-import math "math"
+import (
+	fmt "fmt"
 
-import strings "strings"
-import reflect "reflect"
-import github_com_gogo_protobuf_sortkeys "github.com/gogo/protobuf/sortkeys"
+	proto "github.com/gogo/protobuf/proto"
 
-import io "io"
+	math "math"
+
+	strings "strings"
+
+	reflect "reflect"
+
+	github_com_gogo_protobuf_sortkeys "github.com/gogo/protobuf/sortkeys"
+
+	io "io"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

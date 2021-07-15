@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/docker/docker/pkg/plugingetter"
-	"github.com/docker/docker/plugin/v2"
+	v2 "github.com/docker/docker/plugin/v2"
 )
 
 func lookupPlugin(name string, pg plugingetter.PluginGetter, config Options) (Driver, error) {

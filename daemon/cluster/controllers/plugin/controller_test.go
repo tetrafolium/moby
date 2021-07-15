@@ -15,6 +15,7 @@ import (
 	"github.com/docker/docker/pkg/pubsub"
 	"github.com/docker/docker/plugin"
 	"github.com/docker/docker/plugin/v2"
+	v2 "github.com/docker/docker/plugin/v2"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 )
